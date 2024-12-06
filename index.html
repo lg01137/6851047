@@ -12,7 +12,7 @@
   <h1><b>ENG0018 Computer Laboratory 2024/25</b></h1>
   <h2>Student URN: 6851047</h2>
     <hr>
-    <h2 style="font-family:Times New Roman;"><b> Advancing Hypersonic Flight Through Computational Fluid Dynamics (CFD) </b></h2>
+    <h2 style="font-family:Times New Roman;"><b> Conference Paper: Advancing Hypersonic Flight Through Computational Fluid Dynamics (CFD) </b></h2>
       <hr>
 
     <!style for tables>
@@ -102,90 +102,49 @@
       <P class="ex1">
        
         <pre id="Introduction_InText">
-      In recent years, unmanned aerial vehicles (UAVs) have several uses. UAVs, for example, are often used in disaster response, agriculture,
-    and cargo transportation, among other things. The number of UAV flying operations has dramatically expanded on a global scale. As of
-    October 1st 2024, 792,000 UAVs have been registered with the Federal Aviation Administration<a href="#(Drones by the Numbers)"><I>(Drones by the numbers)</I></a>.
-   
-      An unmanned aerial vehicle, commonly known as a drone, is an aircraft without a human pilot, crew, or passengers on board<a href="#(Fuller, M. (2021))"><I>(Fuller M., 2021)</I></a>.
-    According to the International Trade Administration (ITA), an unmanned aircraft system comprises air vehicles and associated equipment that do not carry a human
-    operator but instead are remotely piloted or fly autonomously<a href="#(44 2020)"><I>(44, 2020)</I></a>.
-         
-      Unmanned Aircraft Systems are composed of a UAV or drone, the person in charge of flight operations on the ground and the infrastructure linking
-    the two. Since it solely refers to the vehicle itself, the UAV refers to a part of the UAS.
- 
-      The UAVs' anti-collision technologies are crucial to preserving their lifespan. Obstacle sensing, collision prediction, and collision avoidance make
-    up most UAV anti-collision technology techniques. By detecting its environment, a UAV can identify and find obstacles, supplying information that can
-    be used to anticipate collisions. The sensors in the UAV gather environmental data during detection, such as the position and speed of obstacles. The
-    UAV will determine whether it will collide with the obstacles during the collision prediction process. If the UAV predicts a collision, it will plan its
-    flight path to avoid it during the collision avoidance operation.
- 
+      Hypersonic flight is defined as the ability to fly at exceptionally high speeds - exceeding Mach 5  <a href="#(George A., 2018)"><I>(George A., 2018)</I></a>, 
+          and it has always been one of the most sought-after goals in modern aerospace engineering. Its potential applications are endless and vary from high-speed travel to 
+          aiding advanced military systems. However, achieving hypersonic flight in an effective, yet safe, manner poses many challenges. This is because hypersonic vehicle will 
+          distort in flight due to the extreme aerodynamic and thermal loads that they are subjected to <a href="#(Neely A., 2022)"><I>(Neely A., 2022)</I></a>.  In order to be able 
+          to combat these difficulties in a manner that is both cost-efficient and practical, advanced methods are needed.
+    It is here that Computational Fluid Dynamics into action. It allows the engineers to model the advanced fluid dynamics that would be encountered at hypersonic speeds, for instance 
+          shockwave interactions, heat transfer, and turbulent flow patterns. Computational Fluid Dynamics helps maximise the efficiency of vehicle designs, as well as improve the accuracy
+          of predictions. This, in turn, greatly reduces the reliance on other forms of testing, such as wind tunnel techniques or free flight testing – which are both costly and not as effective. 
+          This article will discuss how Computational Fluid Dynamics aids the process of advancing hypersonic flight and focus on how it addresses the aerodynamic and thermal challenges that are 
+          associated with hypersonic speeds - shedding light on how computational methods are shaping the future of aerospace technology.
+          
     </pre>
     </p>
      
   <h3 id="Main Body">Main Body</h3>
 <p class="ex1">
     <pre id="MainBody_InText">
-     Diverse collision avoidance systems are categorised to highlight key ideas. Figure 1 shows this classification in two main areas: perception and action.
-    The first phase of any collision avoidance system is perception, primarily obstacle detection. Sensors observe surroundings and identify obstructions.
-    Various sensors exist, classified as either active or passive, based on their functions.
+      As aforementioned, at speeds greater than Mach 5, vehicles are affected by extreme aerodynamic forces, high temperatures, and complex fluid dynamics. Shockwaves are formed due to the rapid 
+      compression of air in front of vehicles, and this is one of the main difficulties associated with hypersonic speed. These shockwaves cause the boundary layer to separate and leads to an abrupt 
+      rise in wall-heat transfer, degraded performance of control surfaces, and sometimes disastrous accidents . This […] is accompanied with amplifications of the heat flux and drag <a href="#(Jiang H., Liu J., 
+      Luo S., Huang W., Wang J., Liu M., 2021)"><I>(Jiang H., Liu J., Luo S., Huang W., Wang J., Liu M., 2021)</I></a>, as well as a loss of control of the vehicle. The intensity of the shockwaves themselves can vary, and this depends on numerous factors, including the shape 
+      and speed of the hypersonic vehicle, but also atmospheric conditions. This therefore makes designing an efficient hypersonic vehicle notably challenging.
 
-                        <img src="FlowGraph.gif">
-          *<I>FIGURE 1. Modules that are integrated into collision avoidance systems are divided into perception and action. Then, it is further divided into
-          avoidance approaches and perception. The aim of this figure is the collision avoidance approaches that will be expanded upon.(Self-made)*</I>
-   
-      There are four primary methods for avoiding collisions in autonomous vehicles: geometric, force-field, optimized, and sense and avoid.
-    Geometric avoidance uses the location and speed of drones to alter their paths, while force-field techniques control attractive and repulsive
-    forces around obstacles. Optimized methods rely on known obstacle parameters to enhance routing, and sense and avoid utilizes real-time
-    obstacle detection for avoidance decisions.
-     
-      The collision avoidance system (CAS) of an autonomous vehicle ensures that it doesn't collide with either stationary or moving obstacles
-    by using detection range and collision radius.
-     
-      This article provides an overview of these collision avoidance techniques, assessing their effectiveness, efficiency, and cost.
-     
+      Further to this, the compression of air in front of the vehicle can generate extreme temperatures – this means that the surface of the vehicle experiences intense thermal loads. This intense heat at 
+      such high speeds can degrade materials, which creates the need to develop advanced heat shields and protection systems. These problems that engineers face when designing hypersonic vehicles, outlined in 
+      Figure 1 <a href="#(Leishmann J., 2018)"><I>(Leishmann J., 2018)</I></a> show that the solutions not only require innovative materials but also an extensive knowledge of fluid dynamics and heat transfer. These are the areas where Computational Fluid 
+      Dynamics has become indispensable.
 
- <b> I. <u>Optimisation Method</u></b>
-      In their 2022 study, Goss, Rajvanshi, and Subbarao<a href="#(Goss, J., Rajvanshi, R. and Subbarao, K. (2022))"><I>(Goss, Rajvanshi and Subbarao, 2022)</I></a> present an analytical method aimed at mitigating collision
-    risks between aeroplanes by leveraging the geometric properties of flight trajectories.
- 
-      This approach offers several benefits, including greater effectiveness, speed, and reliability compared to existing methods, as it evaluates real-time
-    factors such as speed, heading, weather, and obstacles. Minimising errors can also help drone manufacturers avoid costly legal disputes.
- 
-      However, the method requires advanced technical knowledge, which challenges inexperienced users, reducing human judgment in critical
-    decisions and potentially leading to mistakes. Additionally, it might falsely identify collision threats, causing unnecessary evasive measures that could hinder
-    drone performance.
-     
-      The authors emphasise the importance of integrating this technique with other methods to fully enhance its efficacy in reducing aerial drone accidents.
-     
+        <img src="FlowGraph.gif">
+          *<I>Figure 1. *</I>
 
-<b>  II. <u>Force-field Method</u></b>
-      The concept of force-field methods, which involve using attractive or repulsive forces, is crucial for drones to navigate effectively by avoiding obstacles
-    or moving toward targets<a href="#(Purcell, D.W., Huissoon, J.P. (1995))"><I>(Purcell, D.W., Huissoon, J.P., 1995)</I></a>. The technique enhances collision avoidance capabilities, is budget-friendly compared to other methods,
-    and allows for better range in detecting hazards.
-     
-      However, it comes with notable drawbacks, including potential safety risks if the drone malfunctions, possible legal issues, reduced battery life, and decreased
-    accuracy in obstacle detection. Additionally, the technique struggles in urban settings where electromagnetic fields may disrupt its effectiveness.
-     
-      In summary, while the force-field approach can improve safety and navigation for drone operators, it may not be reliable in complex environments.
+      Computational Fluid Dynamics has undoubtedly become a key tool in addressing the complex challenges of hypersonic flight. In this context, Computational Fluid Dynamics simulations are invaluable for predicting 
+      the behaviour of airflows around vehicles traveling at extremely high speeds. These simulations help engineers understand the complex interactions between shock waves, boundary layers, and high-temperature effects 
+      that occur during hypersonic flight <a href="#(Nogueira D., 2024)"><I>(Nogueira D., 2024)</I></a>. Due to this capability, there is a reduced need for expensive wind tunnel testing, and thus the design process of hypersonic 
+      vehicles is accelerated.
 
-
-<b>  III. <u>Geometric Method</u></b>
-      The geometric approach for drone collision avoidance involves creating a 3D map of the environment using sensors and applying geometric algorithms to
-    detect obstacles. By calculating velocities and distances, potential collisions can be predicted, allowing drones to adjust their paths or halt if necessary.
-
-      This method does not require heavy equipment, preserving the drone's weight and enhancing flight efficiency. However, its effectiveness is limited by the
-    narrow field of view, as it cannot detect obstructions outside the sensor range, particularly in difficult terrain or adverse weather conditions.
-
-      Overall, while the geometric technique offers a cost-effective solution for real-time obstacle detection, its limitations warrant careful consideration.
-
- 
-<b>  III. <u>Sense and Avoid Method</u></b>
-      Collision avoidance in drone swarms focuses on efficiently detecting and avoiding obstacles with minimal computational requirements. Each drone is responsible
-    for its path planning, which helps prevent collisions both among drones and with external obstacles without needing to know the intentions of other drones.
-      A notable application of this approach is the use of computer vision to identify animals, enhancing the safety and autonomy of drone navigation by enabling
-    them to navigate without manual control<a href="#(Sharma, S.U. and Shah, D.J. (2016))"><I>(Sharma, S.U. and Shah, D.J. 2016)</I></a>.
-      However, the technology currently has limitations in range and accuracy, which may affect its effectiveness in certain scenarios.
-
+      Computational Fluid Dynamics also has the benefit of optimising vehicle design. Hypersonic vehicles have a delicate balance of low drag, stability, and thermal management. Computational Fluid Dynamics helps designers 
+      virtually test various vehicle configurations-shapes of the airframe, nose cone, wings, and heat shields-to make sure that they will perform efficiently and remain stable at high speeds. It therefore helps to minimise drag 
+      and maximise aerodynamic performance by analysing shockwave interactions around the vehicle.
+      
+      Further to this, Computational Fluid Dynamics is vital when it comes to thermal management. Extremely high temperatures at hypersonic speed create massive heat flux on the vehicle's surface. The Computational Fluid Dynamics 
+      can model these thermal stresses, and this in turn allows engineers to design efficient thermal protection systems including heat-resistant materials and ablative coating so that the vehicle can bear the strenuous conditions of 
+      hypersonic flight.
 
     </pre>
 </p>
@@ -193,40 +152,29 @@
 <h3 id="Conclusion">Conclusion</h3>
       <P class="ex1">
         <pre id="Conclusion_InText">
-      Collision avoidance techniques vary in assessment measures based on anticipated uses and platform constraints. Each method has distinct advantages and
-    disadvantages, influencing its overall usability. After analysing the information by their efficiency in different terrains, it is evident that the most effective
-    collision avoidance technique is the optimisation method due to its high efficiency, practicality and monetary value.
+      In conclusion, Computational Fluid Dynamics is an important factor in the advancement of hypersonic flight, as it allows engineers to understand airflow, shockwaves, heat transfer, and turbulence at extreme speeds. Computational Fluid 
+      Dynamics allows us to further optimise vehicle designs, as well as predict performance before physical testing, which increases the speed of development and safety.
+      With the development of higher-resolution solvers and machine learning integrated into Computational Fluid Dynamics techniques, the tool grew in power to address the issues of hypersonic flight. Moreover, as computational power continues 
+      to increase, Computational Fluid Dynamics will undeniably continue to be crucial in designing the next generation of hypersonic vehicles. It will drive innovations in the design of vehicles, thermal protection, and flight stability toward practical, 
+      safe hypersonic flight for military and commercial applications in the future.
+
         </pre>
 
 <hr>
  <h3 id="References">References</h3>
       <p>
         <pre>
-<a id="(44 2020)">44 (2020)</a>. Unmanned Aircraft Systems. [online] International Trade Administration | Trade.gov. [Accessed 28 Nov. 2024]
-          <a href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.trade.gov%2Funmanned-aircraft-systems%23%3Fanchor%3Dcontent-node-t14-field-lp-region-2-1&data=05%7C02%7C%7Cf9b8dd8d0c254ac2d55308dd1594d3e7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638690451165880636%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=5YSapQYD21wxYvTghvXf2M3RF5p25GS5EeY5ysuw9WE%3D&reserved=0" target = "_blank">Trade.gov</a>
+<a id="(George A., 2018)">George A., 2018 </a>. BAE Systems | International. (n.d.). What is hypersonic flight? [online] [Accessed 6 Dec. 2024]
+          <a href="https://www.baesystems.com/en/blog/what-is-hypersonic-flight" target = "_blank">Webpage available here</a>
 
-<a id="(Canis, B., 2015)">Canis, B., 2015</a>. Unmanned Aircraft Systems (UAS): Commercial Outlook for a New Industry. [Accessed: 09 October 2024]
-          <a href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgoodtimesweb.org%2Findustrial-policy%2F2015%2FR44192.pdf&data=05%7C02%7C%7Cf9b8dd8d0c254ac2d55308dd1594d3e7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638690451165892435%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=0oDGdMl1P1%2FvjBhRXUeYnBDyqQhxQdA3gWcDsVp%2Fcts%3D&reserved=0" target = "_blank">Article available here</a>
+<a id="(Neely A., 2022)">Neely A., 2022</a>. Uq.edu.au. (2022). The biggest challenges to hypersonic flight – and how they’re being tackled. [online] [Accessed 6 Dec. 2024]
+          <a href="https://mechmining.uq.edu.au/article/2022/10/biggest-challenges-hypersonic-flight-%E2%80%93-and-how-they%E2%80%99re-being-tackled" target = "_blank">Webpage available here</a>
 
-<a id="(Drones by the Numbers)">Drones by the Numbers</a>. (as of 10/1/24) (no date) | Federal Aviation Administration. [Accessed: 11 October 2024]
-          <a href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.faa.gov%2Fnode%2F54496&data=05%7C02%7C%7Cf9b8dd8d0c254ac2d55308dd1594d3e7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638690451165903474%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=bzj%2BFrTYy35IK0qd0%2BgoZFu1%2FzDZiw%2B07x2D9jrwk6Y%3D&reserved=0" target = "_blank">Webpage available here</a>
+<a id="(Jiang H., Liu J., Luo S., Huang W., Wang J., Liu M., 2021)">Jiang H., Liu J., Luo S., Huang W., Wang J., Liu M., 2021</a>. Jiang, H., Liu, J., Luo, S., Huang, W., Wang, J. and Liu, M. (2022). Thermochemical non-equilibrium effects on hypersonic shock wave/turbulent boundary-layer interaction. Acta Astronautica, [online] 192, pp.1–14 [Accessed 6 Dec. 2024]
+          <a href="https://www.sciencedirect.com/science/article/pii/S0094576521006457#abs0010" target = "_blank">Webpage available here</a>
 
-<a id="(Fuller, M. (2021))">Fuller, M. (2021)</a>. Unmanned Aircraft Systems (UAS), Unmanned Aircraft Systems (UAS) | Federal Aviation Administration. [Accessed: 11 October 2024]
-          <a href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.faa.gov%2Fuas&data=05%7C02%7C%7Cf9b8dd8d0c254ac2d55308dd1594d3e7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638690451165914495%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=NFDXGphAptBeP4auNgigY09gCrsGODxbKYaJHCNJW%2Bk%3D&reserved=0" target = "_blank">Webpage available here</a>
-
-<a id="(Goss, J., Rajvanshi, R. and Subbarao, K. (2022))">Goss, J., Rajvanshi, R. and Subbarao, K. (2022)</a>. Aircraft Conflict Detection and Resolution Using Mixed Geometric and Collision Cone
-Approaches | Guidance, Navigation, and Control and Co-located Conferences. Guidance, Navigation, and Control and Co-located Conferences.
-[online] [Accessed 28 Nov. 2024]
-          <a href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Farc.aiaa.org%2Fdoi%2Fabs%2F10.2514%2F6.2004-4879&data=05%7C02%7C%7Cf9b8dd8d0c254ac2d55308dd1594d3e7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638690451165925412%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=C9y8EGA%2B%2FqhEoWC%2BEiGNqmHcrykozGS7nGBxlyU%2B%2BbM%3D&reserved=0" target = "_blank">Webpage available here</a>
-
-<a id="(Purcell, D.W., Huissoon, J.P. (1995))">Purcell, D.W., Huissoon, J.P. (1995)</a>. Curved Array Imaging for Navigation in an Unknown Environment. In: Jones, J.P. (eds) Acoustical Imaging.
-Acoustical Imaging, vol 21. Springer, Boston, MA. [Accessed: 11 October 2024]
-          <a href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-1-4615-1943-0_22&data=05%7C02%7C%7Cf9b8dd8d0c254ac2d55308dd1594d3e7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638690451165936483%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2B7racxcsyXE5R8fUrbHNjqqnST7xlZnlcewYtH42%2FKo%3D&reserved=0" target = "_blank">Webpage available here</a>
-
-<a id="(Sharma, S.U. and Shah, D.J. (2016))">Sharma, S.U. and Shah, D.J. (2016)</a>. A Practical Animal Detection and Collision Avoidance System Using Computer Vision Technique.
-[online] Ieee.org.[Accessed 28 Nov. 2024]
-          <a href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fieeexplore.ieee.org%2Fstamp%2Fstamp.jsp%3Farnumber%3D7792584&data=05%7C02%7C%7Cf9b8dd8d0c254ac2d55308dd1594d3e7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638690451165946991%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=RGB%2BYjNyIwLeO7VAq9DdZvDo0Co73IBkkQ1c4A609NY%3D&reserved=0" target = "_blank">Webpage available here</a>
-         
+<a id="(Nogueira D., 2024)">Nogueira D., 2024</a>. https://aerothermalsolutions.co/en/author/damaris (2024). Advanced Simulation for Hypersonic Vehicles with CFD++. [online] Aerothermal Solutions. Available at: https://aerothermalsolutions.co/en/hypersonic-speed-vehicles-cfd/ [Accessed 6 Dec. 2024]
+          <a href="https://aerothermalsolutions.co/en/hypersonic-speed-vehicles-cfd/#:~:text=CFD%20involves%20the%20use%20of,traveling%20at%20extremely%20high%20speeds" target = "_blank">Webpage available here</a>
         </pre>
       </p>
 
@@ -238,33 +186,6 @@ const d = new Date();
 document.getElementById("date&time").innerHTML=d;
 </script>
  
-      <!DOCTYPE html>
-<html>
-<head>
-    <title>Change Button Colour</title>
-    <script type="text/javascript">
-
-        //Get a reference to the button element
-        window.onload = function() {
-            var button = document.getElementById("colorButton");
-
-            //Function to change the button colour
-            function changeColor() {
-                //Generate a random colour (hexadecimal)
-                var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-
-                //Set the button's background colour to the random colour
-                button.style.backgroundColor = randomColor;
-            }
-
-            //Add a click event listener to the button
-            button.addEventListener("click", changeColor);
-        };
-    </script>
-</head>
-<body>
-    <button id="colorButton">Click me to change colour</button>
-</body>
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -277,10 +198,10 @@ document.getElementById("date&time").innerHTML=d;
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = ’000000’;
-        const repo = 'FY000000’;
+        const username = ’6851047’;
+        const repo = 'FY6851047’;
       
-        const url = `https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapi.github.com%2Frepos%2F%24&data=05%7C02%7C%7Cf9b8dd8d0c254ac2d55308dd1594d3e7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638690451165959218%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=d6%2BXP9IXV6RFatEhc1815r64CYIFIV8Hf%2BqjXVq2c8Y%3D&reserved=0{username}/${repo}/commits`;
+        const url = `https://api.github.com/repos/${6851047}/${repo}/commits`;
         try {
             const response = await fetch(url, {
                 method: 'GET',
