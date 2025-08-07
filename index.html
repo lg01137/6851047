@@ -47,7 +47,7 @@
   <style>
    .mySlides {display:none;}
   </style>
-  <body style="backgroumd-color:#ADD8E6;margin-left:50px;">
+  <body style="background-color:#ADD8E6;margin-left:50px;">
   </style>
   </body>
 
@@ -82,14 +82,14 @@
     <h3>
       <h3 id="Abstract">Abstract</h3>
       <p class="ex1" >
-      <pre>
+      <p>
       
       Advancing hypersonic flight (flight at speeds greater than Mach 5) can undeniably present significant challenges due to extreme aerodynamic forces, heat loads, and turbulent flow
         conditions. In this regard, CFD has become a vital tool in addressing these issues by enabling detailed simulations of airflow, shockwave interactions, and heat transfer at hypersonic 
         speeds. CFD enables the optimization of vehicle designs and performance predictions before physical prototypes are built, thus reducing costs and speeding up the development process. 
         This article describes how CFD is being used to address some of the most important challenges involved in hypersonic flight: aerodynamic optimisation, thermal protection, and turbulence modelling. 
         It also highlights recent advancements in CFD techniques and their growing role regarding hypersonic vehicle design-drive innovation that will shape the future of aerospace technologies.
-      </pre>
+      </p>
     </p>
     </h3>
 <hr>
@@ -100,7 +100,7 @@
 <h3 id="Introduction">Introduction</h3>
       <P class="ex1">
        
-        <pre id="Introduction_InText">
+        <p id="Introduction_InText">
       Hypersonic flight is defined as the ability to fly at exceptionally high speeds - exceeding Mach 5  <a href="#(George A., 2018)"><I>(George A., 2018)</I></a>, 
           and it has always been one of the most sought-after goals in modern aerospace engineering. Its potential applications are endless and vary from high-speed travel to 
           aiding advanced military systems. However, achieving hypersonic flight in an effective, yet safe, manner poses many challenges. This is because hypersonic vehicle will 
@@ -112,12 +112,12 @@
           This article will discuss how Computational Fluid Dynamics aids the process of advancing hypersonic flight and focus on how it addresses the aerodynamic and thermal challenges that are 
           associated with hypersonic speeds - shedding light on how computational methods are shaping the future of aerospace technology.
           
-    </pre>
+    </p>
     </p>
      
   <h3 id="Main Body">Main Body</h3>
 <p class="ex1">
-    <pre id="MainBody_InText">
+    <p id="MainBody_InText">
       As aforementioned, at speeds greater than Mach 5, vehicles are affected by extreme aerodynamic forces, high temperatures, and complex fluid dynamics. Shockwaves are formed due to the rapid 
       compression of air in front of vehicles, and this is one of the main difficulties associated with hypersonic speed. These shockwaves cause the boundary layer to separate and leads to an abrupt 
       rise in wall-heat transfer, degraded performance of control surfaces, and sometimes disastrous accidents . This […] is accompanied with amplifications of the heat flux and drag <a href="#(Jiang H., Liu J., 
@@ -152,24 +152,24 @@
       for the optimization of durability and efficiency. As research and development in hypersonic flight move forward, integrating machine learning algorithms with the CFD models will grant even further speed and accuracy to simulations, 
       thus enabling faster development and refinement of hypersonic technologies.
 
-    </pre>
+    </p>
 </p>
      
 <h3 id="Conclusion">Conclusion</h3>
       <P class="ex1">
-        <pre id="Conclusion_InText">
+        <p id="Conclusion_InText">
       In conclusion, Computational Fluid Dynamics is an important factor in the advancement of hypersonic flight, as it allows engineers to understand airflow, shockwaves, heat transfer, and turbulence at extreme speeds. Computational Fluid 
       Dynamics allows us to further optimise vehicle designs, as well as predict performance before physical testing, which increases the speed of development and safety.
       With the development of higher-resolution solvers and machine learning integrated into Computational Fluid Dynamics techniques, the tool grew in power to address the issues of hypersonic flight. Moreover, as computational power continues 
       to increase, Computational Fluid Dynamics will undeniably continue to be crucial in designing the next generation of hypersonic vehicles. It will drive innovations in the design of vehicles, thermal protection, and flight stability toward practical, 
       safe hypersonic flight for military and commercial applications in the future.
 
-        </pre>
+        </p>
 
 <hr>
  <h3 id="References">References</h3>
       <p>
-        <pre>
+        <p>
 <a id="(George A., 2018)">George A., 2018 </a>. BAE Systems | International. (n.d.). What is hypersonic flight? [online] [Accessed 6 Dec. 2024]
           <a href="https://www.baesystems.com/en/blog/what-is-hypersonic-flight" target = "_blank">Webpage available here</a>
 
@@ -181,7 +181,7 @@
 
 <a id="(Nogueira D., 2024)">Nogueira D., 2024</a>. https://aerothermalsolutions.co/en/author/damaris (2024). Advanced Simulation for Hypersonic Vehicles with CFD++. [online] Aerothermal Solutions. Available at: https://aerothermalsolutions.co/en/hypersonic-speed-vehicles-cfd/ [Accessed 6 Dec. 2024]
           <a href="https://aerothermalsolutions.co/en/hypersonic-speed-vehicles-cfd/#:~:text=CFD%20involves%20the%20use%20of,traveling%20at%20extremely%20high%20speeds" target = "_blank">Webpage available here</a>
-        </pre>
+        </p>
       </p>
 
 <hr>
@@ -262,7 +262,7 @@
     const MainBodyCount = displayWordCount("MainBody_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + MainBodyCount + Conclusion;
+    const totalWordCount = IntroductionCount + MainBodyCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
